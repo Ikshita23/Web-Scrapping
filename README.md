@@ -5,4 +5,5 @@ In this project, I scrapped data from Indeed.com using Python Scrappy. We look a
 It can be used to find the most recently posted jobs within the last one or two days - as some job postings would be taken down if the number of applications reached the required count. 
 
 Reference : https://medium.com/@msalmon00/web-scraping-job-postings-from-indeed-96bd588dcb4b
+
 Referencing the above mentioned blog post I had used BeautifulSoup. The query, location and age (no of days) variables have been used to identify a job type.
