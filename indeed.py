@@ -33,13 +33,13 @@ for i in range(int(stop_on_page)):
 
     t = soup.findAll('a')    
     jobs = soup.findAll('a', attrs={"data-tn-element": "jobTitle"})
-    #companies = soup.findAll('a', attrs={"data-tn-element": "companyName"})
+    companies = soup.findAll('a', attrs={"data-tn-element": "companyName"})
     jobs_div = soup.find_all('div', attrs={'class': 'jobsearch-SerpJobCard'})
     loc_div = soup.find_all('div', attrs={'class': 'recJobLoc'}) 
     for job in jobs:
         job_titles.append(job.get('title'))
-    # for company in companies:
-    #     employers.append(company.text.strip())
+     for company in companies:
+         employers.append(company.text.strip())
 
     for div in jobs_div:
         job_id = div.attrs['data-jk']
